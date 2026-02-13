@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phase 6 – HTML Forms Revision</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <!-- FORM -->
+  <form id="myForm">
+
+    <!-- TEXT INPUT -->
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" /><br />
+    <span id="nameError" class="error"></span><br /><br />
+
+    <!-- SELECT -->
+    <label for="status">Status:</label><br />
+    <select id="status">
+      <option value="Active" selected>Active</option>
+      <option value="Inactive">Inactive</option>
+    </select><br /><br />
+
+    <!-- RADIO GROUP -->
+    <label for="gender">Gender:</label><br />
+    <input type="radio" value="Male" name="gender" checked title="Male" /> Male
+    <input type="radio" value="Female" name="gender" title="Female" /> Female
+    <br /><br />
+
+    <!-- SUBMIT -->
+    <button type="submit">Submit</button>
+    
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>

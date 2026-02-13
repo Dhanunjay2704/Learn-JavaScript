@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE HTML ELEMENTS</title>
+    <style>
+        .coloring{
+            color: red;
+            background-color: yellow;
+            font-size: 25px;
+            border: 2px black;
+        }
+    </style>
+</head>
+<body>
+    <label id="graduatedLabel" for="myCheckbox">Graduated</label>
+    <input id="myCheckbox" type="checkbox"/>
+
+    <label id="nameLabel" for="nameInput">Name:</label>
+    <input id="nameInput" type="text" placeholder="Enter your name"/>
+
+    <div id="parentElement">
+        <p id="childElement">This is a child element that will be removed.</p>
+        <button id="childButton">Click Me</button>
+    </div>
+
+    <h1>classList Toggle Method()</h1>
+    <p id="paragraph">This paragraph is used for classList DOM method</p>
+    <button onclick="toggle()">Click this</button>
+
+    <script src="index.js"></script>
+</body>
+</html>

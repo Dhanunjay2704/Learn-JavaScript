@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedulers Demo</title>
+</head>
+<body>
+
+<h2>JavaScript Schedulers</h2>
+
+<!-- setTimeout -->
+<button onclick="startTimeout()">Start Timeout</button>
+<button onclick="stopTimeout()">Stop Timeout</button>
+
+<br><br>
+
+<!-- setInterval -->
+<button onclick="startInterval()">Start Interval</button>
+<button onclick="stopInterval()">Stop Interval</button>
+
+<p>Counter: <span id="counter">0</span></p>
+
+<script>
+    // setTimeout variables
+    let timeoutId;
+
+    function startTimeout() {
+        timeoutId = setTimeout(() => {
+            alert("setTimeout executed after 2 seconds");
+        }, 2000);
+    }
+
+    function stopTimeout() {
+        clearTimeout(timeoutId);
+        alert("setTimeout cancelled");
+    }
+
+    // setInterval variables
+    let count = 0;
+    let intervalId;
+
+    function startInterval() {
+        intervalId = setInterval(() => {
+            count++;
+            document.getElementById("counter").textContent = count;
+        }, 1000);
+    }
+
+    function stopInterval() {
+        clearInterval(intervalId);
+    }
+</script>
+
+</body>
+</html>
